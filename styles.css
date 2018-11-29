@@ -2,9 +2,18 @@
   0%   { width : 0; }
   100% { width: 100%; }
 }
+
+@keyframes trollrate{
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(-1%, 0%); }
+  50% { transform: translate(-2%, 2%); }
+  75% { transform: translate(0%, -1%); }
+}
+
 .strike span{
   position: relative;
 }
+
 .strike span:after {
   content: ' ';
   position: absolute;
@@ -19,12 +28,18 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards; 
 }
+.trollrate {
+  animation: trollrate 0.1s steps(4) infinite;
+}
+
 .hjnEko {
   background: white;
 }
+
 .no {
   color: #902121;
 }
+
 .zIEGn {
   position: relative;
 }
