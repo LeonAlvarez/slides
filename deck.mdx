@@ -1,23 +1,42 @@
-import { Head } from 'mdx-deck'
+import { Head, Appear, Notes, Image} from 'mdx-deck'
 
 export { default as theme } from './theme'
 
 <Head>
-  <title>Presentation Title</title>
+  <title>Alexa + AWS</title>
 </Head>
 
-# Hello
+<div style={{color: white, fontSize: 40, position: 'absolute', textAlign: 'center'}}>
+  Alexa, tu nueva Project Manager
+</div>
+
+<img style={{width: '100%', heigth: '100vh'}} src="public/hello-computer.gif" />
+---
+
+## Sobre que vamos a hablar
+
+<div style={{fontSize: 40, textAlign: 'left'}}>
+  <ul>
+      <Appear>
+        <li><del>Codigo y mas codigo</del>👩‍💻</li>
+        <li><del>Como hacer que Alexa te haga un</del> 🍳</li>
+        <li><del>Como hacer que alexa trabaje por ti</del>👷‍😢</li>
+        <img style={{margin: '30px auto',display: 'block'}} width="70px" height="70px" src="public/sweat-smile.png" />
+      </Appear>
+  </ul>
+</div>
+---
+
+ <Image src="public/emosido.jpg"/>
 
 ---
 
-## Edit this file
+## Sobre que vamos a hablar
 
-To create your presentation
-
-```notes
-- Create speaker notes in fenced code blocks
-```
+- ¿Qué es Alexa?
+- Que puede hacer por nosotros
+- Como crear tu propia skill
 
 ---
 
-<https://github.com/jxnblk/mdx-deck>
+# Thank You
