@@ -25,16 +25,16 @@ export const Features = () => (
   <div style={{fontSize: 24}}>
     <Appear>
       <div>
-        <Feature src={"public/music.png"} style={{top: '10%', left: '40%'}}>Reproducir música</Feature>
+        <Feature src={"public/music.png"} style={{top: '10%', left: '20%'}}>Reproducir música</Feature>
+      </div>
+      <div>
+        <Feature src={"public/info.png"} style={{top: '15%', left: '33%'}}>Información servicios públicos</Feature>
+      </div>
+      <div>
+        <Feature src={"public/clock.png"} style={{top: '20%', left: '60%'}}>Información en tiempo real</Feature>
       </div>
       <div>
         <Feature src={"public/laugh.png"} style={{top: '30%', left: '10%'}}>Chistes</Feature>
-      </div>
-      <div>
-        <Feature src={"public/clock.png"} style={{top: '30%', left: '60%'}}>Información en tiempo real</Feature>
-      </div>
-      <div>
-        <Feature src={"public/info.png"} style={{top: '33%', left: '33%'}}>Información servicios públicos</Feature>
       </div>
       <div>
         <Feature src={"public/news.png"} style={{top: '60%', left: '15%'}}>Noticias</Feature>
@@ -43,10 +43,10 @@ export const Features = () => (
         <Feature src={"public/cart.png"} style={{top: '65%', left: '30%'}}>Compras</Feature>
       </div>
       <div>
-        <Feature src={"public/user.png"} style={{top: '60%', left: '50%'}}>Nueva interfaz de usuario para aplicaciones existentes</Feature>
+        <Feature src={"public/user.png"} style={{top: '50%', left: '65%'}}>Nueva interfaz de usuario para aplicaciones existentes</Feature>
       </div>
       <div>
-        <Feature src={"public/light.png"} style={{top: '80%', left: '40%'}}>Controlar dispositivos inteligentes</Feature>
+        <Feature src={"public/light.png"} style={{top: '70%', left: '40%'}}>Controlar dispositivos inteligentes</Feature>
       </div>
     </Appear>
   </div>
