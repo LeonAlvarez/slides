@@ -1,28 +1,33 @@
+import './script.js'
 import { Head, Appear, Notes, Image} from 'mdx-deck'
+import AppearNone from './AppearNone';
+import Troll from './Troll';
+import theme from './theme';
 
-export { default as theme } from './theme'
 
 <Head>
   <title>Alexa + AWS</title>
 </Head>
 
-<div style={{color: white, fontSize: 40, position: 'absolute', textAlign: 'center'}}>
+<div style={{color: 'black', fontWeigth: '600', fontSize: '3rem', position: 'relative', marginBottom:'50px', textAlign: 'center'}}>
   Alexa, tu nueva Project Manager
 </div>
 
-<img style={{width: '100%', heigth: '100vh'}} src="public/hello-computer.gif" />
+<img style={{width: '100%', heigth: '100%'}} src="public/hello-computer.gif" />
 ---
 
-## Sobre que vamos a hablar
-
+<Troll max={6}/>
 <div style={{fontSize: 40, textAlign: 'left'}}>
   <ul>
-      <Appear>
-        <li><del>Codigo y mas codigo</del>👩‍💻</li>
-        <li><del>Como hacer que Alexa te haga un</del> 🍳</li>
-        <li><del>Como hacer que alexa trabaje por ti</del>👷‍😢</li>
+      <AppearNone>
+        <li><span>Codigo y mas codigo</span> <img width="40px" height="40px" src="public/coding.png" /></li>
+        <li></li>
+        <li><span>Como hacer que Alexa te haga un</span> <img width="40px" height="40px" src="public/cooking.png" /></li>
+        <li></li>
+        <li><span>Como hacer que alexa trabaje por ti</span> <img width="40px" height="40px" src="public/worker.png" /><img width="40px" height="40px" src="public/cry.png" /></li>
+        <li></li>
         <img style={{margin: '30px auto',display: 'block'}} width="70px" height="70px" src="public/sweat-smile.png" />
-      </Appear>
+      </AppearNone>
   </ul>
 </div>
 ---
@@ -32,11 +37,33 @@ export { default as theme } from './theme'
 ---
 
 ## Sobre que vamos a hablar
-
-- ¿Qué es Alexa?
-- Que puede hacer por nosotros
-- Como crear tu propia skill
+<ul style={{fontSize: 40, textAlign: 'left'}}>
+  <Appear>
+    <li>¿Qué es Alexa?</li>
+    <li>Que puede hacer por nosotros</li>
+    <li>Como crear tu propia skill</li>
+  </Appear>
+</ul>
 
 ---
 
+## ¿Qué es Alexa?
+
+
+---
+
+## Que puede hacer por nosotros
+
+
+
+---
+
+## Como crear tu propia skill
+
+
+---
+
+## La hora de la verdad
+
+---
 # Thank You

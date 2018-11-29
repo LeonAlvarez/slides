@@ -4,16 +4,21 @@
   "description": "Deck created with mdx-deck",
   "scripts": {
     "start": "mdx-deck deck.mdx",
-    "build": "mdx-deck build deck.mdx",
-    "pdf": "mdx-deck pdf deck.mdx",
-    "image": "mdx-deck screenshot deck.mdx",
-    "help": "mdx-deck"
+    "prebuild": "rimraf dist",
+    "build": "npm run build:site && npm run build:pdf",
+    "build:site": "mdx-deck build deck.mdx",
+    "build:pdf": "mdx-deck pdf deck.mdx",
+    "postbuild": "cpy --parents \"public/**\" ./dist"
   },
   "keywords": [],
   "author": "Brent Jackson",
   "license": "MIT",
   "devDependencies": {
-    "mdx-deck": "^1.6.7"
+    "cpy-cli": "^2.0.0",
+    "css-loader": "^1.0.0",
+    "mdx-deck": "^1.6.7",
+    "rimraf": "^2.6.2",
+    "style-loader": "^0.22.1"
   },
   "name": "alexa"
 }
